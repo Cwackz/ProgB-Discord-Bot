@@ -6,6 +6,8 @@ from utils.token_utils import get_token
 intents = discord.Intents.default()
 intents.message_content = True
 
+active_sessions = {}
+
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
